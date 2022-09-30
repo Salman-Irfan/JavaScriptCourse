@@ -1,5 +1,5 @@
 var height = 190
 console.log(height)
-console.log(weight)
+console.log(weight) // -> undefined
 var weight = 123
-console.log(weight)
+console.log(weight) // -> 123
