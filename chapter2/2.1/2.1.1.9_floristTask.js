@@ -15,10 +15,11 @@ let numOfTulipsYouHave = 120;
 
 let totalRosePrice, totalLilyPrice, totalTulipPrice, priceOfAllFlowers;
 totalRosePrice = priceOfRose * numOfRosesYouHave;
-console.log(totalRosePrice)
+console.log(`total rose price = ${totalRosePrice}`)
 totalLilyPrice = priceOfLily * numOfLiliesYouHave;
-console.log(totalLilyPrice);
+console.log(`total lily price = ${totalLilyPrice}`);
 totalTulipPrice = priceOfTulip * numOfTulipsYouHave;
-console.log(totalTulipPrice);
+console.log(`total tulip price = ${totalTulipPrice}`);
 priceOfAllFlowers = totalRosePrice + totalLilyPrice + totalTulipPrice;
-console.log(priceOfAllFlowers);
+console.log(`price of all flowers = ${priceOfAllFlowers}`);
+
