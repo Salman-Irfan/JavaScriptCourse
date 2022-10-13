@@ -40,5 +40,6 @@ console.log(mix1)
 console.log(typeof mix1)
 
 // Try to modify the line const str1 = 42 + "1"; to get the result 43 (without removing the quotes around 1)
-const str4 = 42 + "1";
+const str4 = 42 + +"1";
 //const values cant be modified
+console.log(typeof str4)
