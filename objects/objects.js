@@ -17,4 +17,4 @@ console.log(person);
 
 person[key] = "salmanirfan674@gmail.com"
 console.log(person);
-console.log(person["email"]);
+console.log(person["email"]); //inside square brackets within double quotes we wrote the name of the key
