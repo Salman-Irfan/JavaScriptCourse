@@ -1,1 +1,1 @@
-Object.keys(person)
+const {key1, key2} = obj1;
