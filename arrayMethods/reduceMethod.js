@@ -21,3 +21,8 @@ const totalAmount = userCart.reduce((totalPrice, currentPid)=>{
     
 }, 0)
 console.log(totalAmount)
+
+// totalPrice   currentValue    return
+// 0            {}              12000
+// 12000        22000           34000
+// 34000        32000           66000
