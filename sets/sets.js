@@ -16,3 +16,12 @@ else{
 for(let number of numbers){
     console.log(number)
 }
+
+let person = {
+    fname: "salman",
+    age: 24,
+    1: "one"
+}
+for (let per in person){ // for of  throws uncayght reference on on objcts
+    console.log("person")
+}
