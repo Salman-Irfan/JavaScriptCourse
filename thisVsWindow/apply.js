@@ -18,3 +18,8 @@ about.call(user2, "read", "red")
 // apply()
 // apply and call are same, difference is we pass array in apply
 about.apply(user1, ["write", "yellow"])
+
+// bind ()
+// bind returns us a function, which we can call it later
+const bindFunc = about.bind(user1, "write", "yellow")
+bindFunc()
