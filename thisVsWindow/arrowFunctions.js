@@ -2,7 +2,12 @@
 const user1 = {
     firstName: "salman",
     age: 20,
-    about: () => {
+
+    // about: function(){
+    //      console.log(this.firstName,this.age)
+    // }
+    
+    about: () => { // short syntax
         console.log(this.firstName, this.age) //in this case "this" is one level up i.e. "window"
     }
 }
