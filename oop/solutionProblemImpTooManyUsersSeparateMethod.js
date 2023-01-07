@@ -17,7 +17,7 @@ console.log("obj2.key1 = ", obj2.key1) // output => undefined, but we want if ob
 console.log(`obj4.key5 = ${obj4.key5}`)
 console.log(`obj4.key1 = ${obj4.key1}`)
 console.log("obj4 = ", obj4) // output => __proto__: Object OR [[prototype]]: Object => __proto__ => it contains reference of any object
-// The key/value that JavaScript not find in its object, JS find that key/value in its __proto__ or in its [[prototype]] 
+// The key/value that JavaScript not find in its object, JS find that key/value in its __proto__ or in its [[prototype]] => also known as constructor
 
 // [[prototype]] & prototype both are different from each other
 
