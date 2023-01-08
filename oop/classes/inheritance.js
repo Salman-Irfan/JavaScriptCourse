@@ -28,6 +28,9 @@ class Dog extends Animal {
     run(){
         return `${this.name} is running at ${this.speed}`
     }
+    eat(){
+        return `${this.name} is eating biscuit`
+    }
     
 }
 const tommy = new Dog("tommy", 3, 45)
