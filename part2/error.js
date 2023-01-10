@@ -36,3 +36,4 @@ console.log(firstName)
 // java script itself is => synchronous programming language
 // symchronous => when the code is running, whenever the first line is not completed, the other line will not execute
 // single threaded =>faster =>
+
