@@ -1,10 +1,19 @@
 console.log(this)
-console.log(window)
+// console.log(window)
 console.log(myFunction)
+myFunction()
+console.log(myVarFunction)
+myVarFunc()
 console.log(fullName)
 
+// function declaration
 function myFunction(){
     console.log("this is my function")
+}
+
+// function expression
+var myVarFunc = function(){
+    console.log("this is my var function")
 }
 
 var firstName = "salman"
