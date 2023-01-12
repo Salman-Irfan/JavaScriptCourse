@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>My Website</title>
-    <script src="./dom.js"></script>
-    <script src="./dom/getElementById.js"></script>
+    <script src="./dom.js" defer></script>
+    <script src="./dom/getElementById.js" defer></script>
+    <script src="./dom/querySelector.js" defer></script>
     <!-- how to link JS file with HTML file -->
     <!-- <script src="./file.js"> </script>  -->
     <!-- problem with above approach -->
@@ -39,9 +40,9 @@
         <nav class="nav container">
             <h1 class="logo">Website</h1>
             <ul class="nav-items">
-                <li><a href="">Home</a></li>
-                <li><a href="">Todo</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Todo</a></li>
+                <li class="nav-item"><a href="">Sign Up</a></li>
             </ul>
         </nav>
         <div class="headline">
