@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>My Website</title>
+    <script src="./dom.js
+    "></script>
     <!-- how to link JS file with HTML file -->
-    <!-- <script src="./file.js> </script>"  -->
+    <!-- <script src="./file.js"> </script>  -->
     <!-- problem with above approach -->
     <!-- this file will go to browser, browser will parse this HTML file, Browser will parse this JS file when reaching at this line "10"read this line, and loads this file, at the loading process browser stops further parsing. After that, it'll execute this file. Suppose we'e used header, div etc elements in this JS file, but browser doesn't know what's coming up next, because browser has stopped earlier. JS says that these elements are not exists in it => error. -->
+
+    <!-- we load our file just above closing tag of body -->
+    <!-- <body> -->
+        <!-- custom HTML body code -->
+        <!-- <script src="./file.js"> </script> -->
+    <!-- </body> -->
+
+    <!-- problem with this approach -->
+    <!-- takes time -->
+
+    <!-- how to improve it? -->
+    <!-- in head tag write "async" at after the file name-->
+    <!-- <script src="./file.js" async> </script> -->
+    
+    <!-- problem with this approach -->
+    <!-- when the file completely loads, browser will stop further parsing the HTML file, and start executing the JS file, so there is a risk of the above problem -->
+    
+    <!-- how to improve it? -->
+    <!-- in head tag write "defer" at after the file name-->
+    <!-- <script src="./file.js" defer> </script> -->
+    <!-- Browser will start parsing, it comes in script file line, starts loading this file, and ahead parsing the html file simultaneously. when it completely loads the JS file, t not start executing the JS file, but complete the HTML file parsing first -->
 </head>
 <body>
     <header class="header">
