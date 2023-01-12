@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>My Website</title>
+    <!-- how to link JS file with HTML file -->
+    <!-- <script src="./file.js> </script>"  -->
+    <!-- problem with above approach -->
+    <!-- this file will go to browser, browser will parse this HTML file, Browser will parse this JS file when reaching at this line "10"read this line, and loads this file, at the loading process browser stops further parsing. After that, it'll execute this file. Suppose we'e used header, div etc elements in this JS file, but browser doesn't know what's coming up next, because browser has stopped earlier. JS says that these elements are not exists in it => error. -->
 </head>
 <body>
     <header class="header">
@@ -35,7 +39,7 @@
         <form class="signup-form">
             <div class="form-group">
                 <label for="username"></label>
-                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="text" name="username" id="username" placeholder="Username" autocomplete required>
             </div>
             <div class="form-group">
                 <label for="password"></label>
@@ -47,15 +51,15 @@
             </div>
             <div class="form-group">
                 <label for="phone"></label>
-                <input type="text" name="phone" id="phone" placeholder="Phone">
+                <input type="text" name="phone" id="phone" placeholder="Phone" autocomplete>
             </div>
             <div class="form-group">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete required>
             </div>
             <div class="form-group">
                 <label for="about"></label>
-                <textarea name="about" id="about" cols="100" rows="2" placeholder="About Yourself" ></textarea>
+                <textarea name="about" id="about" cols="100" rows="2" placeholder="About Yourself"></textarea>
             </div>
             <button type="submit" class="btn btn-submit">Submit</button>
         </form>
