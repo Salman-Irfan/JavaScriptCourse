@@ -1,4 +1,4 @@
-console.log("for Loop")
+console.log("for Loop HTML collection")
 
 // array like object => indexing, length property
 let forNavItems = document.getElementsByTagName("a")
