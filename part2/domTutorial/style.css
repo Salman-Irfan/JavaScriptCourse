@@ -78,6 +78,18 @@ a{
     min-height: 100%;
     margin-top: 1rem;
 }
+.todo-list{
+    text-align: left;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+.todo-list li{
+    padding: 0.7rem;
+    background-color: #444;
+    color: cyan;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
 .form-todo input[type="text"]{
     width: 78%;
     padding: 0.8rem;
