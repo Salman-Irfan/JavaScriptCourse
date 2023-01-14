@@ -11,7 +11,7 @@ console.log("todoList.innerHTML = ", todoList.innerHTML)
 todoList.innerHTML += "<li>New Todo</li>"
 
 // when you should usr it, when yoi shoulf not use it
-// performance issues => avoid using it
+// performance issues, everyb time browser re render its already existing elements => avoid using it
 
 // when to use it? 
 // when we have to change the inner HTML, not to add in existing html
