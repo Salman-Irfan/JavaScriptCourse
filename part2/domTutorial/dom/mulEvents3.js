@@ -1,0 +1,1 @@
+console.log("mul events 3")
