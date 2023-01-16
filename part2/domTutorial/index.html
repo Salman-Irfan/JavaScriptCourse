@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>My Website</title>
-    <script src="./dom.js" defer></script>
+    <!-- <script src="./dom.js" defer></script>
     <script src="./dom/getElementById.js" defer></script>
     <script src="./dom/querySelector.js" defer></script>
     <script src="./dom/changeText.js" defer></script>
@@ -16,14 +16,17 @@
     <script src="./dom/forLoopHtmlCollection.js" defer></script>
     <script src="./dom/forLoopNodeList.js" defer></script>
     <script src="./dom/innerHtml.js" defer></script>
-    <script src="./dom/classList.js" defer></script>
+    <script src="./dom/classList.js" defer></script> -->
+
     <!-- <script src="./dom/addHtmlElements.js" defer></script> -->
     <!-- <script src="./dom/createElement.js" defer></script> -->
     <!-- <script src="./dom/cloneNodes.js" defer></script> -->
-    <script src="./dom/staticVsLiveList.js" defer></script>
+    
+    <!-- <script src="./dom/staticVsLiveList.js" defer></script>
     <script src="./dom/staticVsLiveList2.js" defer></script>
     <script src="./dom/elementsDimensions.js" defer></script>
-    <script src="./dom/events.js" defer></script>
+    <script src="./dom/events.js" defer></script> -->
+    <script src="./dom/todo.js" defer></script>
 
 
     <!-- how to link JS file with HTML file -->
@@ -69,16 +72,20 @@
     </header>
     <section class="section-todo container">
         <h2>Your plan for today ?</h2>
+        
+        <!-- To Do Form -->
         <form class="form-todo">
             <input type="text" name="" id="" placeholder="Add Todo">
             <input type="submit" value="Add Todo" class="btn">
         </form>
         <ul class="todo-list">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
+            <li>
+                <span class="text">Do this Do that</span>
+                <div class="todo-buttons">
+                    <button class="todo-btn done">Done</button>
+                    <button class="todo-btn remove">Remove</button>
+                </div>
+            </li>
         </ul>
     </section>
 
