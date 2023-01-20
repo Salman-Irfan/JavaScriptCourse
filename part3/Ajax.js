@@ -30,6 +30,36 @@ xhr.onload = function(){
     console.log(xhr.readyState)
 }
 xhr.send();
+
+// error handling
+const xhr2 = new XMLHttpRequest();
+xhr.open("GET", URL);
+xhr2.onload = ()=>{
+    if(xhr2.status >=200 && xhr2.status <300){
+        const data2 = JSON.parse(xhr2.response);
+        console.log("data2 = ", data2);
+        const id2 = data[3].id;
+        console.log("id2 = ", id2);
+        const xhr3 = new XMLHttpRequest();
+        const URL3 = `${URL}/${id2}`;
+        console.log("URL3 = ", URL3);
+        xhr3.open("GET", URL3);
+        xhr3.onload = () => {
+            const data3 = JSON.parse(xhr3.response);
+            console.log("data3 = ", data3);
+        }
+        xhr3.send();
+    }
+    else{
+        console.log("something went wrong");
+    }
+}
+xhr.onerror = () => {
+    console.log("network error");
+}
+// 2nd approach
+
+
 //////////////////////////////////////////
 
 // basic theory
